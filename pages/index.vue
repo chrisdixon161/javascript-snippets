@@ -5,35 +5,29 @@
       <h1 class="title">
         javascript-snippets
       </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+      <div v-for="snippet in snippets" :key="snippet.slug">
+        <snippet :snippet="snippet"></snippet>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Snippet from '../components/Snippet'
 export default {
+  components: ['Snippet'],
   head() {
     return {
       script: [
         { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
       ],
+    }
+  },
+  async asyncData({ $content }) {
+    const snippets = await $content('snippets').fetch()
+
+    return {
+      snippets,
     }
   },
 }

@@ -9,7 +9,7 @@ collections:
   - name: 'snippets'
     label: 'Snippets'
     format: 'json'
-    folder: 'assets/content/snippets'
+    folder: 'content/snippets'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
