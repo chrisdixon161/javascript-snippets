@@ -20,6 +20,7 @@ export default {
     return {
       script: [
         { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
+        { src: '/prism.js', defer: true },
       ],
     }
   },

@@ -1,6 +1,7 @@
 <template>
   <article class="snippet">
-    {{ snippet.title }}
+    <!-- display tags in each snippet -->
+    <h3 class="text-2xl">{{ snippet.title }}</h3>
     <div v-html="$md.render(snippet.body)" />
   </article>
 </template>
@@ -8,22 +9,17 @@
 <script>
 export default {
   props: ['snippet'],
-  head() {
-    return {
-      script: [{ src: '/prism.js', defer: true }],
-    }
-  },
 }
 </script>
 
 <style scoped>
-.snippet-post {
+article {
   margin: 40px 0;
   padding: 20px;
-  border: 1px solid lightblue;
+  border: 1px solid gray;
 }
 
-.snippet:hover {
+article:hover {
   background: rgb(246, 246, 246);
 }
 </style>
