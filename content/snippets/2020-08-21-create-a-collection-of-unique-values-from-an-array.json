@@ -1,6 +1,12 @@
 {
   "date": "2020-08-21T15:19:24.807Z",
-  "body": "\n\n```\nconst allPizzas = ['margherita', 'pepperoni', 'margherita', 'vegetarian', 'ham','pepperoni']\n\n// longer version- maybe good if you have further nested arrays contained inside:\nconst uniquePizzas = new Set();\nallPizzas.map((pizza) => {\n    uniquePizzas.add(pizza);\n});\n\n// shorter version:\nconst uniquePizzas = [...new Set(allPizzas)]\n\nconsole.log(uniquePizzas) // margherita pepperoni vegetarian ham\n```",
+  "body": "```javascript\nconst allPizzas = ['margherita', 'pepperoni', 'margherita', 'vegetarian', 'ham','pepperoni']\n\n// longer version- maybe good if you have further nested arrays contained inside:\nconst uniquePizzas = new Set();\nallPizzas.map((pizza) => {\n    uniquePizzas.add(pizza);\n});\n\n// shorter version:\nconst uniquePizzas = [...new Set(allPizzas)]\n\nconsole.log(uniquePizzas) // margherita pepperoni vegetarian ham\n```",
   "title": "Create a collection of unique values from an array",
-  "tags": ["collection", "unique", "array", "set", "map"]
+  "tags": [
+    "collection",
+    "unique",
+    "array",
+    "set",
+    "map"
+  ]
 }
