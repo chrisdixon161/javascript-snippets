@@ -1,0 +1,12 @@
+{
+  "date": "2020-08-21T14:42:02.205Z",
+  "title": "Find the lowest number in an array",
+  "body": "```javascript\nconst lowest = Math.min(1, 77, 34);\n\nconsole.log(lowest); // 1\n```",
+  "tags": [
+    "array",
+    "lowest",
+    "number",
+    "math",
+    "min"
+  ]
+}
