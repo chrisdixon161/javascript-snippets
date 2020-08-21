@@ -1,0 +1,12 @@
+{
+  "date": "2020-08-21T14:39:34.271Z",
+  "title": "Find the highest number in an array",
+  "body": "```javascript\nconst highest = Math.max(1, 77, 34);\n\nconsole.log(highest); // 77\n```",
+  "tags": [
+    "array",
+    "highest",
+    "Math",
+    "math",
+    "max"
+  ]
+}
