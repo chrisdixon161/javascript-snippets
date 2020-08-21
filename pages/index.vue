@@ -15,7 +15,7 @@
 <script>
 import Snippet from '../components/Snippet'
 export default {
-  components: ['Snippet'],
+  components: { Snippet },
   head() {
     return {
       script: [

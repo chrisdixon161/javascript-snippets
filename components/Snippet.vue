@@ -8,6 +8,11 @@
 <script>
 export default {
   props: ['snippet'],
+  head() {
+    return {
+      script: [{ src: '/prism.js', defer: true }],
+    }
+  },
 }
 </script>
 
@@ -15,6 +20,7 @@ export default {
 .snippet-post {
   margin: 40px 0;
   padding: 20px;
+  border: 1px solid lightblue;
 }
 
 .snippet:hover {
