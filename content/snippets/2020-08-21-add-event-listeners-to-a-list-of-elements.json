@@ -1,0 +1,11 @@
+{
+  "date": "2020-08-21T15:45:19.611Z",
+  "title": "Add Event Listeners To A List Of Elements",
+  "body": "\n\n```html\n<ul>\n  <li>Item 1</li>\n  <li>Item 2</li>\n  <li>Item 3</li>\n  <li>Item 4</li>\n  <li>Item 5</li>\n</ul>\n<!-- output the selected list item -->\n<h3></h3>\n```\n\n```javascript\n// select all list items\nconst links = document.querySelectorAll(\"li\");\n// for-of loop\n// gives us a constant value for each \"link\" in our list of links:\nfor (const link of links) {\n  // we can then use this link and add an event listener:\n  link.addEventListener(\"click\", setSelected);\n}\n\n// function to run when list item is clicked\nfunction setSelected(e) {\n  document.querySelector('h3').innerText = `Selected  ${e.target.innerText}`\n}\n```",
+  "tags": [
+    "event listeners",
+    "for",
+    "for of",
+    "list"
+  ]
+}
