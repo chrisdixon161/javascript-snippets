@@ -5,9 +5,18 @@
       <h1 class="title">
         javascript-snippets
       </h1>
-      <div v-for="snippet in snippets" :key="snippet.slug">
-        <snippet :snippet="snippet"></snippet>
-      </div>
+
+      <section class>
+        <label for="search">Search all posts:</label>
+        <input type="text" id="search" v-model="search" />
+      </section>
+
+      <section>
+        <h3 v-if="!search">Recently added:</h3>
+        <div v-for="snippet in filteredList" :key="snippet.slug">
+          <snippet :snippet="snippet"></snippet>
+        </div>
+      </section>
     </div>
   </div>
 </template>
@@ -23,6 +32,21 @@ export default {
         { src: '/prism.js', defer: true },
       ],
     }
+  },
+  data: function () {
+    return {
+      search: '',
+    }
+  },
+  computed: {
+    filteredList() {
+      if (!this.search) return this.snippets
+      return this.snippets.filter((snippet) =>
+        // to string first to allow partial matches
+        // i.e. "mi" will return "min" term when typing, includes alone will wait for a full match
+        snippet.tags.toString().includes(this.search.toLowerCase())
+      )
+    },
   },
   async asyncData({ $content }) {
     const snippets = await $content('snippets').fetch()

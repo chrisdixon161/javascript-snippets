@@ -1,6 +1,7 @@
 <template>
   <article class="snippet">
     <!-- display tags in each snippet -->
+    <!-- add author to snippet -->
     <h3 class="text-2xl">{{ snippet.title }}</h3>
     <div v-html="$md.render(snippet.body)" />
   </article>
