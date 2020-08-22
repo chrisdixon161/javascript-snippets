@@ -1,0 +1,11 @@
+{
+  "date": "2020-08-22T10:27:31.047Z",
+  "body": "```javascript\nconst ingredients = [\"cheese\", \"dough\", \"sauce\", \"pepperoni\"]\nconsole.log(ingredients.length) // 4\n```",
+  "title": "Find the number of items in an array",
+  "tags": [
+    "array",
+    "items",
+    "number",
+    "length"
+  ]
+}
