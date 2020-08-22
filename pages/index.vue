@@ -21,10 +21,10 @@
         />
         <p>Or, filter by keyword:</p>
         <ul>
-          <li @click="search = 'array'">array</li>
-          <li @click="search = 'object'">object</li>
-          <li @click="search = 'number'">number</li>
-          <li @click="search = 'string'">string</li>
+          <li @click="search = 'array'" class="cursor-pointer">array</li>
+          <li @click="search = 'object'" class="cursor-pointer">object</li>
+          <li @click="search = 'number'" class="cursor-pointer">number</li>
+          <li @click="search = 'string'" class="cursor-pointer">string</li>
         </ul>
       </section>
 
@@ -58,10 +58,17 @@ export default {
   computed: {
     filteredList() {
       if (!this.search) return this.snippets
-      return this.snippets.filter((snippet) =>
-        // to string first to allow partial matches
-        // i.e. "mi" will return "min" term when typing, includes alone will wait for a full match
-        snippet.tags.toString().includes(this.search.toLowerCase())
+      return this.snippets.filter(
+        (snippet) =>
+          // to string first to allow partial matches
+          // i.e. "mi" will return "min" term when typing, includes alone will wait for a full match
+          // snippet.title.toLowerCase().includes(this.search.toLowerCase()) ||
+          snippet.tags.toString().includes(this.search.toLowerCase()) ||
+          snippet.title
+            .split(' ')
+            .some((value) =>
+              this.search.toLowerCase().split(' ').includes(value)
+            )
       )
     },
   },

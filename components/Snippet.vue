@@ -4,6 +4,7 @@
     <!-- add author to snippet -->
     <h3 class="text-2xl">{{ snippet.title }}</h3>
     <div v-html="$md.render(snippet.body)" />
+    {{ snippet.tags }}
   </article>
 </template>
 
