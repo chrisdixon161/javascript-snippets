@@ -1,23 +1,40 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        javascript-snippets
+    <header class="text-center">
+      <h1 class="text-6xl mt-2">
+        Javascript Snippets
       </h1>
+      <h2 class="text-2xl my-8">
+        A free to use, open source, collection of <br />Javascript Snippets
+      </h2>
+    </header>
 
-      <section class>
-        <label for="search">Search all posts:</label>
-        <input type="text" id="search" v-model="search" />
+    <main>
+      <section class="text-center">
+        <label for="search">Search all snippets:</label>
+        <br />
+        <input
+          type="text"
+          id="search"
+          v-model="search"
+          class="border rounded p-4 w-1/2 my-4"
+        />
+        <p>Or, filter by keyword:</p>
+        <ul>
+          <li @click="search = 'array'">array</li>
+          <li @click="search = 'object'">object</li>
+          <li @click="search = 'number'">number</li>
+          <li @click="search = 'string'">string</li>
+        </ul>
       </section>
 
-      <section>
-        <h3 v-if="!search">Recently added:</h3>
+      <section class="mt-8">
+        <h3 class="text-2xl" v-if="!search">Recently added:</h3>
         <div v-for="snippet in filteredList" :key="snippet.slug">
           <snippet :snippet="snippet"></snippet>
         </div>
       </section>
-    </div>
+    </main>
   </div>
 </template>
 
@@ -58,40 +75,4 @@ export default {
 }
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
+<style></style>
