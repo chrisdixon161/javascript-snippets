@@ -1,6 +1,6 @@
 {
   "date": "2020-08-22T10:23:26.162Z",
-  "body": "```javascript\nconst array1= [\"cheese\", \"dough\", \"sauce\", \"pepperoni\"]\nconst array2= [\"mozzarella\", \"peppers\", \"chicken\", \"cheese\"]\n\n// to return true or false\nconst isIncluded =  array1.some(value => array2.includes(value))\ndocument.getElementById('boolean').innerText = isIncluded\n\n// to return matching values\nconst values = array1.filter(value => array2.includes(value))\ndocument.getElementById('values').innerText = values\n```",
+  "body": "```javascript\nconst array1= [\"cheese\", \"dough\", \"sauce\", \"pepperoni\"]\nconst array2= [\"mozzarella\", \"peppers\", \"chicken\", \"cheese\"]\n\n// to return true or false\nconst isIncluded =  array1.some(value => array2.includes(value))\nconsole.log(isIncluded) // true\n\n// to return matching values\nconst values = array1.filter(value => array2.includes(value))\nconsole.log(values) // cheese\n```",
   "title": "Check if an array value is included in another array",
   "tags": [
     "array",
