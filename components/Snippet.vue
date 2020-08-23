@@ -1,9 +1,16 @@
 <template>
-  <article class="snippet">
+  <article class="snippet" @click="selected = !selected">
     <!-- display tags in each snippet -->
     <!-- add author to snippet -->
-    <h3 class="text-2xl" @click="selected = !selected">{{ snippet.title }}</h3>
-    <popup :snippet="snippet" v-show="selected"></popup>
+    <ul v-for="tag in snippet.tags" :key="tag" class="inline-block space-x-6">
+      <li class="border rounded-lg px-4 py-2 mr-4">{{ tag }}</li>
+    </ul>
+    <h3 class="text-2xl">
+      {{ snippet.title }}
+    </h3>
+    <transition name="fade">
+      <popup :snippet="snippet" v-show="selected"></popup>
+    </transition>
   </article>
 </template>
 
@@ -28,5 +35,13 @@ article {
 article:hover {
   /* background: rgb(246, 246, 246); */
   cursor: pointer;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
