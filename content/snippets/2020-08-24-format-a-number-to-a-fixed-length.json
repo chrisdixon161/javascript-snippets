@@ -1,0 +1,11 @@
+{
+  "date": "2020-08-24T15:32:14.247Z",
+  "body": "```javascript\nconst number = 37.4563457975\n\nconst fixedLength = number.toPrecision(3)\nconsole.log(fixedLength) // 37.5\n```",
+  "title": "Format a number to a fixed length",
+  "tags": [
+    "number",
+    "fixed",
+    "toPrecision",
+    "length"
+  ]
+}
