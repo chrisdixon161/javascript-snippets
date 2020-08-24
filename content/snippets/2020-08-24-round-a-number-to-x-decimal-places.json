@@ -1,0 +1,11 @@
+{
+  "date": "2020-08-24T15:28:38.311Z",
+  "body": "```javascript\nconst number = 37.4563457975\n// round to 2 decimal places\nconst rounded = number.toFixed(2)\nconsole.log(rounded) // 37.46\n```",
+  "tags": [
+    "number",
+    "rounded",
+    "decimal places",
+    "toFixed"
+  ],
+  "title": "Round a number to x decimal places"
+}
