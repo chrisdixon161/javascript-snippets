@@ -1,0 +1,10 @@
+{
+  "date": "2020-08-28T16:50:44.463Z",
+  "title": "Swap the values of array items",
+  "body": "```javascript\nlet pizzas = ['margherita', 'pepperoni', 'vegetarian', 'ham'];\n\n// swap margherita and pepperoni positions\n[pizzas[0], pizzas[1]] = [pizzas[1], pizzas[0]]\n\nconsole.log(pizzas) // [\"pepperoni\", \"margherita\", \"vegetarian\", \"ham\"]\n```",
+  "tags": [
+    "array",
+    "swap",
+    "reposition"
+  ]
+}
