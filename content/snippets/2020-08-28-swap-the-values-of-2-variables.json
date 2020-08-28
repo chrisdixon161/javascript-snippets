@@ -1,0 +1,10 @@
+{
+  "date": "2020-08-28T16:44:35.202Z",
+  "body": "```javascript\nlet ingredient1 = 'cheese';\nlet ingredient2 = 'pepperoni';\n\n[ingredient1, ingredient2] = [ingredient2, ingredient1]\n\nconsole.log(ingredient1, ingredient2) // \"pepperoni\", \"cheese\"\n```",
+  "title": "Swap the values of 2 variables",
+  "tags": [
+    "variables",
+    "swap",
+    "values"
+  ]
+}
