@@ -1,7 +1,7 @@
 {
   "date": "2020-08-22T10:49:03.516Z",
   "body": "```javascript\nconst ingredientsArray = [\"cheese\", \"dough\", \"sauce\", \"pepperoni\"]\nconst ingredientsString = 'cheese, dough, sauce, pepperoni'\nconst ingredientsObject = {\n  ingredients: [\"cheese\", \"dough\", \"sauce\", \"pepperoni\"]\n}\n\nconsole.log(Array.isArray(ingredientsArray)) // true\nconsole.log(Array.isArray(ingredientsString)) // false\nconsole.log(Array.isArray(ingredientsObject)) // false\n// also works for arrays inside of objects:\nconsole.log(Array.isArray(ingredientsObject.ingredients)) // true \n```",
-  "title": "Javascript: Check if a value is an array ",
+  "title": "Check if a value is an array ",
   "tags": [
     "array",
     "isArray",
