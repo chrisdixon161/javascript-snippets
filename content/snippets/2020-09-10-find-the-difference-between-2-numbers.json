@@ -1,0 +1,10 @@
+{
+  "date": "2020-09-10T12:18:13.582Z",
+  "body": "```javascript\nconst number1 = -8\nconst number2 = -11\n\nconsole.log(Math.abs(number1 - number2)) // 3\n\n// ----------\n\nconst number1 = -8\nconst number2 = 11\n\nconsole.log(Math.abs(number1 - number2)) // 19\n```",
+  "title": "Find the difference between 2 numbers",
+  "tags": [
+    "number",
+    "difference",
+    "abs"
+  ]
+}
