@@ -1,0 +1,12 @@
+{
+  "date": "2020-09-10T12:13:00.545Z",
+  "title": "Convert a negative number to positive",
+  "body": "```javascript\nconst number = -8\n\nconsole.log(Math.abs(number)) // 8\n```",
+  "tags": [
+    "math",
+    "number",
+    "positive",
+    "negative",
+    "abs"
+  ]
+}
