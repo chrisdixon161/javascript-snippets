@@ -1,0 +1,12 @@
+{
+  "date": "2020-09-10T10:16:52.477Z",
+  "title": "Check if a number is positive, negative or zero",
+  "body": "```javascript\nconsole.log(Math.sign(20)); // 1\n\nconsole.log(Math.sign(-20)); // -1\n\nconsole.log(Math.sign(0)); // 0\n\nconsole.log(Math.sign(-0)); //  -0\n\nconsole.log(Math.sign('-20')); // -1\n\nconsole.log(Math.sign('hello')); // NaN\n\nconsole.log(Math.sign(NaN)); // NaN\n```",
+  "tags": [
+    "math",
+    "number",
+    "negative",
+    "positive",
+    "zero"
+  ]
+}
