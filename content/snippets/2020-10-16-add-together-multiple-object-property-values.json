@@ -6,5 +6,5 @@
     "map",
     "object"
   ],
-  "title": "Add together multiple object property values"
+  "title": "Loop through objects and add together property values"
 }
