@@ -1,0 +1,12 @@
+{
+  "date": "2020-10-16T14:03:26.115Z",
+  "title": "Loop through objects and create an array from  property values",
+  "body": "```javascript\n// Array of objects. We want to add together all price properties.\nconst orders = [\n  {\n    id: 1,\n    item: 'Vue T-Shirt- large',\n    price: 19\n  },\n  {\n    id: 2,\n    item: 'Vue T-Shirt-small (custom)',\n    price: 23\n  },\n  {\n    id: 3,\n    item: 'Vue Hoodie- medium',\n    price: 45\n  }\n]\n\nfunction totalSales()  {\n  let items = 0\n  orders.map((order) => {\n    // for each object, add the item property to new array\n   items.push(order.item)\n  })\n  return total // = Vue T-Shirt- large,Vue T-Shirt-small (custom),Vue Hoodie- medium\n}\n```",
+  "tags": [
+    "javascript",
+    "array",
+    "object",
+    "map",
+    "push"
+  ]
+}
