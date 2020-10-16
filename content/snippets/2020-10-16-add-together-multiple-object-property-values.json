@@ -1,0 +1,10 @@
+{
+  "date": "2020-10-16T13:55:19.384Z",
+  "body": "```html\n<button>get total</button>\n\n<!-- set span with result -->\n<p> \n  Total sales = \n  <span id=\"total\"></span>\n</p>\n```\n\n\n\n```javascript\n// Array of objects. We want to add together all price properties.\nconst orders = [\n  {\n    id: 1,\n    item: 'Vue T-Shirt- large',\n    price: 19\n  },\n  {\n    id: 2,\n    item: 'Vue T-Shirt-small (custom)',\n    price: 23\n  },\n  {\n    id: 3,\n    item: 'Vue Hoodie- medium',\n    price: 45\n  }\n]\n\nfunction totalSales()  {\n  let total = 0\n  orders.map((order) => {\n    // for each object, add the price property to variable\n    total += order.price\n  })\n  return total // 87\n}\n\n```",
+  "tags": [
+    "javascript",
+    "map",
+    "object"
+  ],
+  "title": "Add together multiple object property values"
+}
