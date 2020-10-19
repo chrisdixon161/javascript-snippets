@@ -1,0 +1,11 @@
+{
+  "date": "2020-10-19T10:34:46.627Z",
+  "title": "Remove all whitespace from a string",
+  "body": "```javascript\n// set original string\nconst name = \"  Hey remove   my whitespace  !   !!!  \"\n\n// remove whitespace\nconst trimmed = name.replace(/\\s+/g, '')\n\n// result= Heyremovemywhitespace!!!!\n```",
+  "tags": [
+    "whitespace",
+    "trim",
+    "string",
+    "replace"
+  ]
+}
