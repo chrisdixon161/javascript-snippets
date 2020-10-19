@@ -1,0 +1,10 @@
+{
+  "date": "2020-10-19T10:44:11.005Z",
+  "title": "Remove whitespace from the beginning and end of a string",
+  "body": "```javascript\n// set original string\nconst string = \"  Hey remove   my whitespace  !   !!!  \"\n\n// remove whitespace\nconst trimmed = string.trim()\n\n// result= \"Hey remove   my whitespace  !   !!!\"\n\n\n```",
+  "tags": [
+    "whitespace",
+    "string",
+    "trim"
+  ]
+}
