@@ -1,0 +1,11 @@
+{
+  "date": "2021-06-04T13:58:34.077Z",
+  "body": "```javascript\nconst allPizzas = ['margherita', 'pepperoni', 'margherita', 'vegetarian', 'ham','pepperoni']\n\nconst numberOfItems = 2\n\n// Get first items\nconst first = allPizzas.slice(0,numberOfItems) // [\"margherita\",\"pepperoni\"]\n\n// Get last items (negative value)\nconst last = allPizzas.slice(-numberOfItems) // [\"ham\",\"pepperoni\"]\n```",
+  "title": "Javascript: Select Multiple Array Values From Beginning Or End",
+  "tags": [
+    "array",
+    "slice",
+    "javascript",
+    ""
+  ]
+}
